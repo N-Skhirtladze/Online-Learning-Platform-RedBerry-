@@ -1,0 +1,156 @@
+:root {
+  --main-bg-color: #F5F5F5;
+  --header-btn-border: #4F46E5;
+  --btn-bg: #4F46E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: var(--main-bg-color);
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #D1D1D1;
+}
+
+.center-header {
+  width: 1566px;
+  margin: 24px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-side {
+  display: flex;
+}
+
+.browse-courses {
+  width: 190px;
+}
+.enrolled-courses{
+  width: 197px;
+}
+
+.browse-courses,
+.enrolled-courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 20px;
+  margin-right: 8px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.browse-courses:hover,
+ .enrolled-courses:hover{
+  opacity: .7;
+}
+
+.logged-in {
+  display: flex;
+  gap: 36px;
+}
+
+.logged-out {
+  margin-left: 28px;
+  display: flex;
+  gap: 15px;
+}
+
+.logged-out button {
+  background-color: none;
+  border: 2px solid var(--header-btn-border);
+  padding: 18px 25px;
+  color: var(--btn-bg);
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.logged-out button:hover {
+  opacity: .7;
+}
+
+.logged-out button:nth-child(2) {
+  background-color: var(--btn-bg);
+  color: white;
+}
+
+.hero-slider {
+  width: 1566px;
+  height: 420px;
+  margin: 64px auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide1, .slide2, .slide3 {
+  width: 100%;
+  position: relative;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform .5s;
+}
+
+.slider-btn2, .slider-btn1 {
+  top: 216px;
+}
+.slider-btn3 {
+  top: 187px;
+}
+.slider-btn {
+  position: absolute;
+  left: 48px;
+  padding: 20px 25px;
+  border: none;
+  background-color: var(--btn-bg);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 311px;
+  left: 1386px;
+  width: 132px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-dots {
+  width: 1206px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: absolute;
+  top: 334px;
+  left: 180px;
+}
+
+.dot {
+  width: 57px;
+  height: 8px;
+  background-color: #C1BCBC80;
+  border-radius: 9px;
+  cursor: pointer;
+}
