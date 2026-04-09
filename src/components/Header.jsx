@@ -15,7 +15,7 @@ const Header = () => {
                             <img src={enrolledCourses} alt="" />
                             <p>Enrolled Courses</p>
                         </div>
-                        <img src={avatar} alt="" style={{cursor: "pointer"}}/>
+                        <img src={avatar} alt="" style={{cursor: "pointer", width: "56px", height: "56px"}}/>
                     </div>
                     <div className="logged-out">
                         <button>Log In</button>
