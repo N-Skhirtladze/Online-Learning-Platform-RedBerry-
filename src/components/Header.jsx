@@ -1,6 +1,6 @@
 import { logo, enrolledCourses, avatar, browseCourses } from "../assets";
 
-const Header = () => {
+const Header = ({ setSignUp }) => {
     return (
         <header>
             <div className="center-header">
@@ -19,7 +19,7 @@ const Header = () => {
                     </div>
                     <div className="logged-out">
                         <button>Log In</button>
-                        <button>Sign Up</button>
+                        <button onClick={() => setSignUp(true)}>Sign Up</button>
                     </div>
                 </div>
             </div>

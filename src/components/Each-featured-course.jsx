@@ -12,10 +12,10 @@ const EachFeaturedCourse = ({ course }) => {
                     <p className="avg-rating">{course?.avgRating}</p>
                 </div>
             </div>
-                <p className="each-featured-title">{course?.title}</p>
-                <p className="featured-description">{course?.description}</p>
+            <p className="each-featured-title">{course?.title}</p>
+            <p className="featured-description">{course?.description}</p>
             <div className="featured-footer">
-                <p className="featured-price">Starting from <span style={{fontSize: "32px", fontWeight: "bold", color: "black"}}>${Math.round(course?.basePrice)}</span></p>
+                <p className="featured-price">Starting from <span style={{ fontSize: "32px", fontWeight: "bold", color: "black" }}>${Math.round(course?.basePrice)}</span></p>
                 <button>Details</button>
             </div>
         </div>
