@@ -19,7 +19,7 @@ const FeaturedCourses = () => {
             } finally {
                 setLoading(false);
             }
-
+    
         }
         fetchData();
     }, []);
